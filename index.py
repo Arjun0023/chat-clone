@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# Set up the OpenAI API client
+# Use your own api
 openai.api_key = os.getenv('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')
 
 # Set up the model and prompt
@@ -13,7 +13,6 @@ model_engine = "text-davinci-003"
 
 # Set response until otherwise cancelled
 prompt = input("🤖 How can I help you?\n")
- 
 
 while prompt.lower() not in ("no", "n", "no!", "you can't", "you cant", "nothing"):
     # Generate a response
